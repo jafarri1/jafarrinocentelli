@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* 🔴 Background Styling */
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    transition: background-image 0.8s ease-in-out; /* 🔥 Smooth transition effect */
+    color: white;
+}
+
+/* nav link description HEADINGS font colors */
+section h2 {
+    color: #fcb5e4; /* pink */
+    font-size: 3rem; /* Adjust size if needed */
+    text-transform: uppercase; /* Optional: Make text uppercase */
+    letter-spacing: 2px; /* Optional: Spacing between letters */
+}
+
+/* nav link description TEXT font colors */
+/* 🎨 Interests Section */
+#interests h2 { color: #fcb5e4; } /* Orange */
+#interests p { color: #060005; font-size: 1.4rem; font-weight: bold; } /* Gold */
+
+/* 🔴 Translucent White Box Behind Text */
+.interests-box {
+    background: rgba(255, 255, 255, 0.5); /* White with 20% opacity */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Smooth rounded edges */
+    max-width: 40%; /* Keeps it from stretching too wide */
+   
+    
+    backdrop-filter: blur(8px); /* Adds a subtle blur effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Optional glow effect */
+}
+
+/* 🔴 Ensure Text is Readable */
+.interests-box p {
+    font-size: 1.8rem;
+    font-weight: 600; /* Make text bold */
+    color: black; /* Ensures text stays dark and readable */
+}
+
+
+/* 🎨 Projects Section */
+#projects h2 { color: #fcb5e4; } /* Dodger Blue */
+#projects p { color: #000c0c; font-size: 1.4rem; } /* Cyan */
+
+/* 🔴 Translucent White Box Behind Text */
+.projects-box {
+    background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Smooth rounded edges */
+    max-width: 40%; /* Keeps it from stretching too wide */
+   
+    
+    backdrop-filter: blur(8px); /* Adds a subtle blur effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Optional glow effect */
+}
+
+/* 🔴 Ensure Text is Readable */
+.projects-box p {
+    font-size: 1.8rem;
+    font-weight: 600; /* Make text bold */
+    color: black; /* Ensures text stays dark and readable */
+}
+
+.fst {
+    font-size: 26px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+/* 🔴 Translucent White Box Behind Text */
+.projects2-box {
+    background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Smooth rounded edges */
+    max-width: 40%; /* Keeps it from stretching too wide */
+   
+    
+    backdrop-filter: blur(8px); /* Adds a subtle blur effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Optional glow effect */
+}
+
+/* 🔴 Ensure Text is Readable */
+.projects2-box p {
+    font-size: 1.8rem;
+    font-weight: 600; /* Make text bold */
+    color: black; /* Ensures text stays dark and readable */
+}
+
+.cfg {
+    font-size: 26px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+/* 🔴 Translucent White Box Behind Text */
+.projects3-box {
+    background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Smooth rounded edges */
+    max-width: 40%; /* Keeps it from stretching too wide */
+   
+    
+    backdrop-filter: blur(8px); /* Adds a subtle blur effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Optional glow effect */
+}
+
+/* 🔴 Ensure Text is Readable */
+.projects3-box p {
+    font-size: 1.8rem;
+    font-weight: 600; /* Make text bold */
+    color: black; /* Ensures text stays dark and readable */
+}
+
+.sunshine-drift {
+    font-size: 26px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+
+
+
+
+/* 🎨 Education Section */
+#education h2 { color: #fcb5e4; } /* Lime Green */
+#education p { color: #050700; font-size: 2rem; } /* Yellow-Green */
+/* 🔴 Translucent White Box Behind Text */
+
+.education-box {
+    background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Smooth rounded edges */
+    max-width: 40%; /* Keeps it from stretching too wide */
+   
+    
+    backdrop-filter: blur(8px); /* Adds a subtle blur effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Optional glow effect */
+}
+
+/* 🔴 Ensure Text is Readable */
+.education-box p {
+    font-size: 1.2rem;
+    font-weight: 600; /* Make text bold */
+    color: black; /* Ensures text stays dark and readable */
+}
+/* 🎨 Experience Section */
+#experience h2 { color: #fcb5e4; } /* Blue-Violet */
+#experience p { color: #060006; font-size: 1.2rem; } /* Plum */
+
+.experience-box {
+    background: rgba(255, 255, 255, 0.9); /* White with 20% opacity */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Smooth rounded edges */
+    max-width: 40%; /* Keeps it from stretching too wide */
+   
+    
+    backdrop-filter: blur(8px); /* Adds a subtle blur effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Optional glow effect */
+}
+
+/* 🔴 Ensure Text is Readable */
+.experience-box p {
+    font-size: 0.5rem;
+   font-weight: bold;
+    color: black; /* Ensures text stays dark and readable */
+}
+
+.pmm-sanctuary {
+    font-size: 17px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.sde-snap {
+    font-size: 17px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.pei-google {
+    font-size: 17px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.jedi-acm {
+    font-size: 17px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.ta-tmp {
+    font-size: 17px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.ym-cg {
+    font-size: 17px;
+    color: #fcb5e4; /* Example: A bright yellow color */
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+/* 🎨 Contact Section */
+#contact h2 { color: #fcb5e4; } /* Deep Pink */
+#contact p { color: #000000; font-size: 2rem; } /* Hot Pink */
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Smooth rounded edges */
+    max-width: 30%; /* Keeps it from stretching too wide */
+   
+    
+    backdrop-filter: blur(8px); /* Adds a subtle blur effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Optional glow effect */
+}
+
+/* 🔴 Ensure Text is Readable */
+.contact-box p {
+    font-size: 0.5rem;
+   font-weight: bold;
+    color: black; /* Ensures text stays dark and readable */
+}
+
+
+
+.email-icon {
+    font-size: 2rem;
+    color: #fcb5e4;
+    margin-top: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.email-icon:hover {
+    color: #fcb5e4;
+    transform: scale(1.2);
+}
+
+
+
+/* 🔴 Background Overlay (To Prevent Flickering During Transitions) */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -2;
+    transition: background-image 0.8s ease-in-out;
+}
+
+/* 🔴 Active Background Transition Effect */
+body.fade-transition {
+    animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* 🔴 Ensure Content Stays Visible Above Background */
+.home {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #fcb5e4;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #fcb5e4;
+    border-bottom: 3px solid #fcb5e4;
+}
+
+@media(max-width:995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #fcb5e4;
+        border-bottom: 3px solid #fcb5e4;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+    nav.active {
+        display: block;
+    }
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #fcb5e4;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: #fcb5e4;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 10%;
+    box-shadow: 0 0 25px solid #fcb5e4;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #fcb5e4;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #fcb5e4;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #fcb5e4;
+    box-shadow: 0 0 25px #fcb5e4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #fcb5e4;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #fcb5e4;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: #fcb5e4;
+    color: black;
+    box-shadow: 0 0 25px #fcb5e4;
+}
+
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "software Developer";
+    color: #fcb5e4;
+    animation: words 10s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid #fcb5e4;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Product Manager";
+    }
+    21%, 40% {
+        content: "Fashion-Tech Enthusiast";
+    }
+    41%, 60% {
+        content: "Fashion Model";
+    }
+    61%, 80% {
+        content: "Activist";
+    }
+    81%, 100% {
+        content: "Leader Who Gets Results.";
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+.custom-icon {
+    width: 30px;  /* Adjust size as needed */
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-icon:hover {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
+/* Default nav link styles */
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+/* Change color & underline when active */
+nav a.active {
+    color: #fcb5e4 !important; /* Pink */
+    border-bottom: 3px solid #fcb5e4; /* Underline effect */
+}
+
+/* Hover effect remains the same */
+nav a:hover {
+    color: #fcb5e4;
+    border-bottom: 3px solid #fcb5e4;
+}
